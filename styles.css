@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap");
+html, body {
+  margin: 0;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+.page {
+  background-color: #f7f7f7;
+  position: relative;
+  display: block;
+  min-height: 100vh;
+}
+
+.main__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 12.5px;
+  font-weight: lighter;
+  font-size: 12.5vw;
+  color: #1f1f1f;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 15vh;
+  font-family: "Fraunces", serif;
+}
+
+#main__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 3vw;
+  color: #1f1f1f;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  max-height: 45vw;
+  width: 100%;
+}
+
+.first__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  border-bottom: 1px solid #bebebe;
+}
+
+.france__things {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.count {
+  color: #5b477c;
+  text-align: center;
+}
+
+.section__title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 7vw;
+  color: #1f1f1f;
+  margin: 0;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+  font-family: "Fraunces", serif;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+}
+
+.section__title:hover {
+  color: #252961;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card__image {
+  max-height: 35vw;
+  width: 40vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.card__image:hover {
+  transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -webkit-transition: 2s ease all;
+}
+
+.card {
+  color: #1f1f1f;
+  margin: 5vw 5vw 5vw 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5vw;
+  font-family: "Fraunces", serif;
+}
+
+.card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 1.25vw;
+}
+
+.second__page {
+  border-bottom: 1px solid #bebebe;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first__sports__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.second__sports__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third__sport__card {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.text__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.sports_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sports__img__section {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.image__sports {
+  max-height: 35vw;
+  height: 100%;
+  width: 15vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.sports__title {
+  font-size: 2vw;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0px 15px 0px;
+}
+
+.sports__text {
+  margin: 0;
+}
+
+.third__wrapper {
+  max-width: 50vw;
+}
+
+.third__page {
+  border-bottom: 1px solid #bebebe;
+}
+
+.france__restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.restaurant__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurants__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.restaurant__image {
+  width: 100%;
+}
+
+.fourth__page {
+  border-bottom: 1px solid #bebebe;
+}
+
+.transport__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transport__france {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transport__image {
+  max-height: 95vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+}
+
+.transport__card {
+  width: 500px;
+  margin-bottom: 5vw;
+}
+
+.transport__text {
+  margin: 0;
+}
+
+.footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1080px) {
+  #main__description {
+    margin-bottom: 150px;
+  }
+  .france__things {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__title {
+    font-size: 8vw;
+  }
+  .card__image {
+    max-height: 85vw;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: relative;
+  }
+  .card {
+    max-width: 700px;
+    margin-bottom: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .card__title {
+    font-size: 6vw;
+  }
+  .card__text {
+    font-size: 2.5vw;
+  }
+  .first__sports__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sports_card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .image__sports {
+    max-height: 85vw;
+    width: 20vw;
+  }
+  .rest__change {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main__title {
+    font-size: 10vh;
+  }
+  .main__image {
+    max-height: 100vw;
+  }
+  #main__description {
+    font-size: 5vw;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card__title {
+    font-size: 8vw;
+  }
+  .card__text {
+    font-size: 4vw;
+  }
+  .section__title {
+    font-size: 10vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

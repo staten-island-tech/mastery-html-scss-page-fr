@@ -1,0 +1,376 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    font-family: $font-worksans;
+}
+
+.page {
+    background-color: $background-color;
+    position: relative;
+    display: block;
+    min-height: 100vh;
+}
+
+.main__title {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 12.5px;
+    font-weight: lighter;
+    font-size: 12.5vw;
+    color: $text-color;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15vh;
+    font-family: $font-fraunces;
+}
+
+#main__description {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 3vw;
+    color: $text-color;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.main__image {
+    object-fit: contain;
+    position: relative;
+    max-height: 45vw;
+    width: 100%;
+}
+
+
+
+@mixin slim-line {
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+// FIRST PAGE
+
+
+.first__page {
+    @include column();
+    margin-top: 100px;
+    @include slim-line();
+}
+
+.france__things {
+    @include column();
+
+}
+
+.count {
+    color: $lotus-color;
+    text-align: center;
+}
+
+.section__title {
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 7vw;
+    color: $text-color;
+    margin: 0;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    font-family: $font-fraunces;
+    transition: 250ms linear;
+}
+
+.section__title:hover {
+    color: $midnight-color;
+    transform: scale(1.05);
+}
+
+
+.card__image {
+    max-height: 35vw;
+    width: 40vw;
+    object-fit: contain;
+    position: relative;
+    transition: 250ms linear; 
+    flex: 0.5;
+}
+
+.card__image:hover {
+    transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	transition:  2s ease all;
+	-moz-transition: 2s ease all;
+	-webkit-transition:  2s ease all;
+}
+
+.card {
+    color: $text-color;
+    margin: 5vw 5vw 5vw 5vw;
+    display: flex;
+}
+
+
+.card__title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    font-family: $font-fraunces;
+}
+
+.card__text {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.25vw;
+}
+
+
+
+// SECOND PAGE
+
+.second__page {
+    @include slim-line();
+    align-items: center
+}
+
+.first__sports__section {
+    @include row();
+}
+
+.second__sports__section {
+    @include column();
+    align-items: center;
+    justify-content: center;
+}
+
+.third__sport__card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.text__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5
+}
+
+.sports_card {
+    @include row();
+}
+
+.sports__img__section {
+    flex: 0.5;
+}
+
+.image__sports {
+    max-height: 35vw;
+    height: 100%;
+    width: 15vw;
+    object-fit: contain;
+    position: relative;
+}
+
+.sports__title {
+    font-size: 2vw;
+    margin: 0;
+    align-items: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.sports__text {
+    margin: 0;
+}
+
+.third__wrapper {
+    max-width: 50vw;
+}
+
+
+
+
+
+// THIRD PAGE
+
+.third__page {
+    @include slim-line();
+}
+
+.france__restaurants {
+    @include row();
+}
+
+.restaurant__card {
+    @include column();
+}
+
+.restaurants__text {
+    @include column();
+    align-items: center;
+    justify-content: center;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.restaurant__image {
+    width: 100%;
+}
+
+
+
+
+// FOURTH PAGE
+
+.fourth__page {
+    @include slim-line();
+}
+
+.transport__card {
+    @include column();
+    align-items: center;
+    
+}
+
+.transport__france {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transport__image {
+    max-height: 95vw;
+    object-fit: contain;
+    position: relative;
+}
+
+.transport__card {
+    width: 500px;
+    margin-bottom: 5vw;
+}
+
+.transport__text {
+    margin: 0;
+}
+
+
+// FOOTER  
+
+.footer__text {
+    display: flex;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+
+
+
+// MEDIA QUERY
+
+
+@media screen and (max-width: 1080px) {
+    #main__description {
+        margin-bottom: 150px;
+    }
+
+    .france__things {
+        @include column();
+        align-items: center;
+    }
+
+    .section__title {
+        font-size: 8vw;
+    }
+
+    .card__image {
+        max-height: 85vw;
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+    }
+
+    .card {
+        max-width: 700px;
+        margin-bottom: 10vw;
+        @include column();
+    }
+
+    .second__card {
+        flex-direction: column-reverse;
+    }
+
+    .card__title {
+        font-size: 6vw;
+    }
+    
+    .card__text {
+        font-size: 2.5vw;
+    }
+
+    .first__sports__section {
+        @include column();
+    }
+
+    .sports_card {
+        align-items: center;
+    }
+
+    .image__sports {
+        max-height: 85vw;
+        width: 20vw;
+    }
+
+    .rest__change {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main__title {
+        font-size: 10vh;
+    }
+
+    .main__image {
+        max-height: 100vw;
+    }
+
+    #main__description {
+        font-size: 5vw;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .card__title {
+        font-size: 8vw;
+    }
+    
+    .card__text {
+        font-size: 4vw;
+    }
+
+    .section__title {
+        font-size: 10vw;
+    }
+}
+
